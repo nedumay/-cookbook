@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cookbook</string>
+    <string name="login_btn">Вход</string>
+    <string name="registr_btn">Регистрация</string>
+</resources>
