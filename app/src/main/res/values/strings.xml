@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Cookbook</string>
     <string name="login_btn">Login</string>
+    <string name="login">Login</string>
     <string name="registr_btn">Registration</string>
+    <string name="password">Password</string>
+    <string name="next">Next</string>
+    <string name="login_guest">Login guest</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign up</string>
+    <string name="police">By signing up, you agree to programs terms of service and privacy policy.</string>
 </resources>
