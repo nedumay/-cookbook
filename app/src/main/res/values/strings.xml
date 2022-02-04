@@ -15,6 +15,9 @@
     <string name="police">By signing up, you agree to programs terms of service and privacy policy.</string>
     <string name="recept_category">Recipes by category</string>
     <string name="national_kitchen">National kitchen</string>
+    <string name="logged">You are logged in</string>
+    <string name="no_logged">Such an account already exists</string>
+
 
     <!-- Recipes by Category -->
     <string name="сold_appetizern">Cold appetizer</string>

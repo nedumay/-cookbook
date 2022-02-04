@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLogin"
+        android:id="@+id/text_login"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,12 +34,13 @@
         app:layout_constraintTop_toBottomOf="@+id/login_text"
         app:layout_constraintVertical_bias="0.018">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputPassword"
+        android:id="@+id/text_password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,9 +51,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputLogin"
+        app:layout_constraintTop_toBottomOf="@+id/text_login"
         app:layout_constraintVertical_bias="0.0">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
@@ -72,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/text_password"
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton

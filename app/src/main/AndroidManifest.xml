@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cookbook">
         <activity
-            android:name=".MenuActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainMenuActivity"
             android:exported="false" />
         <activity
