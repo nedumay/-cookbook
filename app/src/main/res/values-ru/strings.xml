@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Cookbook</string>
+    <string name="main">Главная</string>
+    <string name="favorite">Избранное</string>
+    <string name="search">Поиск</string>
+    <string name="about_the_app">О программе</string>
     <string name="login_btn">Вход</string>
     <string name="login">Логин</string>
     <string name="registr_btn">Регистрация</string>
@@ -9,4 +13,17 @@
     <string name="name">Имя</string>
     <string name="sign_up">Зарегистрироваться</string>
     <string name="police">Регистрируясь, вы соглашаетесь с условиями использования программы и политики конфиденциальности.</string>
+    <string name="recept_category">Рецепты по категориям</string>
+
+    <!-- Recipes by Category -->
+    <string name="сold_appetizern">Холодная закуска</string>
+    <string name="hot_appetizern">Горячая закуска</string>
+    <string name="second_dishes">Вторые блюда</string>
+    <string name="soup">Супы</string>
+    <string name="porridge">Каши</string>
+    <string name="dessert">Десерты</string>
+    <string name="sauce">Соусы</string>
+    <string name="salads">Салаты</string>
+    <string name="drinks">Напитки</string>
+
 </resources>

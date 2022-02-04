@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Cookbook</string>
+    <string name="main">Main</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="about_the_app">About the app</string>
     <string name="login_btn">Login</string>
     <string name="login">Login</string>
     <string name="registr_btn">Registration</string>
@@ -9,4 +13,17 @@
     <string name="name">Name</string>
     <string name="sign_up">Sign up</string>
     <string name="police">By signing up, you agree to programs terms of service and privacy policy.</string>
+    <string name="recept_category">Recipes by Category</string>
+
+    <!-- Recipes by Category -->
+    <string name="сold_appetizern">Cold appetizer</string>
+    <string name="hot_appetizern">Hot appetizer</string>
+    <string name="second_dishes">Second dishes</string>
+    <string name="soup">Soups</string>
+    <string name="porridge">Porridges</string>
+    <string name="dessert">Desserts</string>
+    <string name="sauce">Sauce</string>
+    <string name="salads">Salads</string>
+    <string name="drinks">Drinks</string>
+
 </resources>
