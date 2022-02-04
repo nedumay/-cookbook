@@ -14,6 +14,7 @@
     <string name="sign_up">Зарегистрироваться</string>
     <string name="police">Регистрируясь, вы соглашаетесь с условиями использования программы и политики конфиденциальности.</string>
     <string name="recept_category">Рецепты по категориям</string>
+    <string name="national_kitchen">Национальные кухни</string>
 
     <!-- Recipes by Category -->
     <string name="сold_appetizern">Холодная закуска</string>
@@ -25,5 +26,12 @@
     <string name="sauce">Соусы</string>
     <string name="salads">Салаты</string>
     <string name="drinks">Напитки</string>
+    <!-- National Kitchen -->
+    <string name="russian_kitchen">Русская кухня</string>
+    <string name="asia_kitchen">Азиатская кухня</string>
+    <string name="europe_kitchen">Европейская кухня</string>
+    <string name="kavkaz_kitchen">Кавказская кухня</string>
+    <string name="vostok_kitchen">Восточная кухня</string>
+    <string name="mexico_kitchen">Мексиканская кухня</string>
 
 </resources>

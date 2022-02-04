@@ -13,7 +13,8 @@
     <string name="name">Name</string>
     <string name="sign_up">Sign up</string>
     <string name="police">By signing up, you agree to programs terms of service and privacy policy.</string>
-    <string name="recept_category">Recipes by Category</string>
+    <string name="recept_category">Recipes by category</string>
+    <string name="national_kitchen">National kitchen</string>
 
     <!-- Recipes by Category -->
     <string name="сold_appetizern">Cold appetizer</string>
@@ -25,5 +26,12 @@
     <string name="sauce">Sauce</string>
     <string name="salads">Salads</string>
     <string name="drinks">Drinks</string>
+    <!-- National Kitchen -->
+    <string name="russian_kitchen">Russian kitchen</string>
+    <string name="asia_kitchen">Asian kitchen</string>
+    <string name="europe_kitchen">European kitchen</string>
+    <string name="kavkaz_kitchen">Caucasian kitchen</string>
+    <string name="vostok_kitchen">Eastern kitchen</string>
+    <string name="mexico_kitchen">Mexican kitchen</string>
 
 </resources>

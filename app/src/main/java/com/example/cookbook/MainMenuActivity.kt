@@ -14,25 +14,38 @@ import com.google.android.material.appbar.MaterialToolbar
 
 class MainMenuActivity : AppCompatActivity() {
 
-    private val dataItem: ArrayList<DataItem> = ArrayList()
+    private val dataItemCat: ArrayList<DataItem> = ArrayList()
+    private val dataItemNat: ArrayList<DataItem> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        setInitialSavedState()
+        setInitialSavedStateCat()
+        setInitialSavedStateNat()
 
-        val recyclerView:RecyclerView = findViewById(R.id.recyclerView)
-        val recClickListener = object: onRecyclerClickListener{
+        val recyclerViewCat:RecyclerView = findViewById(R.id.recyclerView)
+        val recClickListenerCat = object: onRecyclerClickListener{
             override fun onClick(dataItem: DataItem, position: Int) {
                 when(position){
                     0 -> { Toast.makeText(applicationContext,"test1", Toast.LENGTH_SHORT).show() }
                 }
             }
         }
-        val adapter = RecyclerAdapter(this, dataItem, recClickListener)
-        recyclerView.adapter = adapter
+        val adapterCat = RecyclerAdapter(this, dataItemCat, recClickListenerCat)
+        recyclerViewCat.adapter = adapterCat
+
+        val recyclerViewNat: RecyclerView = findViewById(R.id.recyclerView2)
+        val recClickListenerNat = object: onRecyclerClickListener{
+            override fun onClick(dataItem: DataItem, position: Int) {
+                when(position){
+                    0 -> { Toast.makeText(applicationContext,"test1", Toast.LENGTH_SHORT).show() }
+                }
+            }
+        }
+        val adapterNat = RecyclerAdapter(this, dataItemNat, recClickListenerNat)
+        recyclerViewNat.adapter = adapterNat
 
         val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
         topAppBar.setNavigationOnClickListener {
@@ -59,16 +72,25 @@ class MainMenuActivity : AppCompatActivity() {
     }
 
 
-    private fun setInitialSavedState() {
-        dataItem.add(DataItem(R.string.сold_appetizern,R.drawable.ice_appetizer))
-        dataItem.add(DataItem(R.string.hot_appetizern,R.drawable.hot_appetizer))
-        dataItem.add(DataItem(R.string.second_dishes,R.drawable.seconds_dishes))
-        dataItem.add(DataItem(R.string.soup,R.drawable.soups))
-        dataItem.add(DataItem(R.string.salads,R.drawable.salads))
-        dataItem.add(DataItem(R.string.porridge,R.drawable.porridges))
-        dataItem.add(DataItem(R.string.dessert,R.drawable.desserts))
-        dataItem.add(DataItem(R.string.sauce,R.drawable.sauce))
-        dataItem.add(DataItem(R.string.drinks,R.drawable.drinks))
+    private fun setInitialSavedStateCat() {
+        dataItemCat.add(DataItem(R.string.сold_appetizern,R.drawable.ice_appetizer))
+        dataItemCat.add(DataItem(R.string.hot_appetizern,R.drawable.hot_appetizer))
+        dataItemCat.add(DataItem(R.string.second_dishes,R.drawable.seconds_dishes))
+        dataItemCat.add(DataItem(R.string.soup,R.drawable.soups))
+        dataItemCat.add(DataItem(R.string.salads,R.drawable.salads))
+        dataItemCat.add(DataItem(R.string.porridge,R.drawable.porridges))
+        dataItemCat.add(DataItem(R.string.dessert,R.drawable.desserts))
+        dataItemCat.add(DataItem(R.string.sauce,R.drawable.sauce))
+        dataItemCat.add(DataItem(R.string.drinks,R.drawable.drinks))
+    }
+
+    private fun setInitialSavedStateNat() {
+        dataItemNat.add(DataItem(R.string.russian_kitchen,R.drawable.russia))
+        dataItemNat.add(DataItem(R.string.asia_kitchen,R.drawable.asia))
+        dataItemNat.add(DataItem(R.string.europe_kitchen,R.drawable.europe))
+        dataItemNat.add(DataItem(R.string.kavkaz_kitchen,R.drawable.kavkaz))
+        dataItemNat.add(DataItem(R.string.vostok_kitchen,R.drawable.vostok))
+        dataItemNat.add(DataItem(R.string.mexico_kitchen,R.drawable.mexico))
     }
 
 }
