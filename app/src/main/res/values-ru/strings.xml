@@ -17,6 +17,7 @@
     <string name="national_kitchen">Национальные кухни</string>
     <string name="logged">Вы зарегистрированы</string>
     <string name="no_logged">Аккаунт уже существует</string>
+    <string name="no_log">Аккаунт не существует</string>
 
     <!-- Recipes by Category -->
     <string name="сold_appetizern">Холодная закуска</string>

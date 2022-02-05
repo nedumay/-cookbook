@@ -17,6 +17,7 @@
     <string name="national_kitchen">National kitchen</string>
     <string name="logged">You are logged in</string>
     <string name="no_logged">Such an account already exists</string>
+    <string name="no_log">Account not exists</string>
 
 
     <!-- Recipes by Category -->
