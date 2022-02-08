@@ -18,6 +18,11 @@
     <string name="logged">Вы зарегистрированы</string>
     <string name="no_logged">Аккаунт уже существует</string>
     <string name="no_log">Аккаунт не существует</string>
+    <string name="my_recipes">Мои рецепты</string>
+    <string name="favorit_recipes">Избранные рецепты</string>
+    <string name="settings_account">Найстройки и аккаунт</string>
+    <string name="help_feedback">Помощь и обратная связь</string>
+    <string name="other">Другое</string>
 
     <!-- Recipes by Category -->
     <string name="сold_appetizern">Холодная закуска</string>

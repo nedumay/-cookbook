@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/my_recipes"
+            android:icon="@drawable/ic_baseline_star"
+            android:title="@string/my_recipes"
+            android:fitsSystemWindows="true"
+            />
+
+        <item
+            android:id="@+id/favorite"
+            android:icon="@drawable/ic_baseline_favorite"
+            android:title="@string/favorite"
+            android:fitsSystemWindows="true"/>
+
+        <item
+            android:id="@+id/settings_account"
+            android:icon="@drawable/ic_baseline_settings"
+            android:title="@string/settings_account"
+            android:fitsSystemWindows="true"/>
+
+        <item
+            android:id="@+id/help_feedback"
+            android:icon="@drawable/ic_baseline_help"
+            android:title="@string/help_feedback"
+            android:fitsSystemWindows="true"/>
+    </group>
+
+</menu>

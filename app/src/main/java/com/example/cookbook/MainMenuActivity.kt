@@ -3,6 +3,7 @@ package com.example.cookbook
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cookbook.adapters.RecyclerAdapter
@@ -10,6 +11,7 @@ import com.example.cookbook.adapters.onRecyclerClickListener
 import com.example.cookbook.data.DataItem
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.navigation.NavigationView
 
 
 class MainMenuActivity : AppCompatActivity() {
@@ -48,15 +50,21 @@ class MainMenuActivity : AppCompatActivity() {
         recyclerViewNat.adapter = adapterNat
 
         val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
+        val navigationView = findViewById<NavigationView>(R.id.navigation_view)
+
         topAppBar.setNavigationOnClickListener {
-            // Handle navigation icon press
+            drawerLayout.open()
         }
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            menuItem.isChecked = true
+            drawerLayout.close()
+            true
+        }
+
         topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.favorite -> {
-                    // Handle favorite icon press
-                    true
-                }
                 R.id.search -> {
                     // Handle search icon press
                     true
@@ -67,6 +75,7 @@ class MainMenuActivity : AppCompatActivity() {
                 }
                 else -> false
             }
+
         }
 
     }

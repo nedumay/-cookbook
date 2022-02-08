@@ -18,6 +18,11 @@
     <string name="logged">You are logged in</string>
     <string name="no_logged">Such an account already exists</string>
     <string name="no_log">Account not exists</string>
+    <string name="my_recipes">My recipes</string>
+    <string name="favorit_recipes">Favorit recipes</string>
+    <string name="settings_account">Settings &amp; account</string>
+    <string name="help_feedback">Help &amp; feedback</string>
+    <string name="other">Other</string>
 
 
     <!-- Recipes by Category -->
