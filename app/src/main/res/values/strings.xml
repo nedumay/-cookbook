@@ -23,6 +23,10 @@
     <string name="settings_account">Settings &amp; account</string>
     <string name="help_feedback">Help &amp; feedback</string>
     <string name="other">Other</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot you password?</string>
+    <string name="loading">Loading</string>
+    <string name="check">Сhecking account existence</string>
 
 
     <!-- Recipes by Category -->

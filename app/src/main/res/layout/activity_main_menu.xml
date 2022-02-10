@@ -29,7 +29,7 @@
                 app:navigationIcon="@drawable/ic_baseline_menu"
                 app:menu="@menu/top_app_bar"
                 style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
-                android:background="@android:color/transparent"/>
+               />
 
         </com.google.android.material.appbar.AppBarLayout>
         <LinearLayout

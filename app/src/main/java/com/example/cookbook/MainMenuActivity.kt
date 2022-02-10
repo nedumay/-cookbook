@@ -65,10 +65,6 @@ class MainMenuActivity : AppCompatActivity() {
 
         topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.search -> {
-                    // Handle search icon press
-                    true
-                }
                 R.id.more -> {
                     // Handle more item (inside overflow menu) press
                     true

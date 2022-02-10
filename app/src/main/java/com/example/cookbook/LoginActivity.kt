@@ -1,12 +1,14 @@
 package com.example.cookbook
 
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import com.example.cookbook.databinding.ActivityLoginBinding
 import com.example.cookbook.domain.LoginUserEmail
-
 
 class LoginActivity: AppCompatActivity() {
 
@@ -25,9 +27,9 @@ class LoginActivity: AppCompatActivity() {
         }
 
         bindingLogin.loginBtn.setOnClickListener {
-            val email = bindingLogin.inputLogin.text.toString()
-            val password = bindingLogin.inputPassword.text.toString()
-            loginUserEmail.loginUser(email,password, this@LoginActivity)
+            var email = bindingLogin.inputLogin.text.toString()
+            var password = bindingLogin.inputPassword.text.toString()
+            loginUserEmail.loginUser(email,password,this@LoginActivity)
         }
     }
 }
