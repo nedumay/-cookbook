@@ -1,4 +1,4 @@
-package com.example.cookbook
+package com.example.cookbook.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

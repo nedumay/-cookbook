@@ -23,6 +23,10 @@
     <string name="settings_account">Найстройки и аккаунт</string>
     <string name="help_feedback">Помощь и обратная связь</string>
     <string name="other">Другое</string>
+    <string name="remember_me">Запомнить меня</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="loading">Загрузка</string>
+    <string name="check">Проверка существования аккаунта</string>
 
     <!-- Recipes by Category -->
     <string name="сold_appetizern">Холодная закуска</string>

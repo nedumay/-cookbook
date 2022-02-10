@@ -12,16 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cookbook">
         <activity
-            android:name=".MainMenuActivity"
+            android:name=".ui.ListRecipes"
             android:exported="false" />
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".ui.MainMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

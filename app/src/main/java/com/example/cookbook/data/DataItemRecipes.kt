@@ -1,8 +1,7 @@
 package com.example.cookbook.data
 
-class DataItem (var titleId:Int, var imgId:Int) {
+class DataItemRecipes(var titleId:Int) {
     init {
         titleId = titleId
-        imgId = imgId
     }
 }

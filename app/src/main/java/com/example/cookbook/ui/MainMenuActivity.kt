@@ -1,41 +1,46 @@
-package com.example.cookbook
+package com.example.cookbook.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cookbook.R
 import com.example.cookbook.adapters.RecyclerAdapter
 import com.example.cookbook.adapters.onRecyclerClickListener
+import com.example.cookbook.data.DataInitItem
 import com.example.cookbook.data.DataItem
-import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
 
 
 class MainMenuActivity : AppCompatActivity() {
 
-    private val dataItemCat: ArrayList<DataItem> = ArrayList()
-    private val dataItemNat: ArrayList<DataItem> = ArrayList()
+    //private val dataItemCat: ArrayList<DataItem> = ArrayList()
+    //private val dataItemNat: ArrayList<DataItem> = ArrayList()
+    private val dataItem = DataInitItem()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        setInitialSavedStateCat()
-        setInitialSavedStateNat()
+        dataItem.setInitialSavedStateCat()
+        dataItem.setInitialSavedStateNat()
 
         val recyclerViewCat:RecyclerView = findViewById(R.id.recyclerView)
         val recClickListenerCat = object: onRecyclerClickListener{
             override fun onClick(dataItem: DataItem, position: Int) {
                 when(position){
-                    0 -> { Toast.makeText(applicationContext,"test1", Toast.LENGTH_SHORT).show() }
+                    0 -> {
+                        val intent = Intent(this@MainMenuActivity, ListRecipes::class.java)
+                        startActivity(intent)
+                    }
                 }
             }
         }
-        val adapterCat = RecyclerAdapter(this, dataItemCat, recClickListenerCat)
+        val adapterCat = RecyclerAdapter(this, dataItem.dataItemCat, recClickListenerCat)
         recyclerViewCat.adapter = adapterCat
 
         val recyclerViewNat: RecyclerView = findViewById(R.id.recyclerView2)
@@ -46,7 +51,7 @@ class MainMenuActivity : AppCompatActivity() {
                 }
             }
         }
-        val adapterNat = RecyclerAdapter(this, dataItemNat, recClickListenerNat)
+        val adapterNat = RecyclerAdapter(this, dataItem.dataItemNat, recClickListenerNat)
         recyclerViewNat.adapter = adapterNat
 
         val topAppBar = findViewById<MaterialToolbar>(R.id.topAppBar)
@@ -65,10 +70,6 @@ class MainMenuActivity : AppCompatActivity() {
 
         topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.search -> {
-                    // Handle search icon press
-                    true
-                }
                 R.id.more -> {
                     // Handle more item (inside overflow menu) press
                     true
@@ -81,7 +82,7 @@ class MainMenuActivity : AppCompatActivity() {
     }
 
 
-    private fun setInitialSavedStateCat() {
+    /*private fun setInitialSavedStateCat() {
         dataItemCat.add(DataItem(R.string.сold_appetizern,R.drawable.ice_appetizer))
         dataItemCat.add(DataItem(R.string.hot_appetizern,R.drawable.hot_appetizer))
         dataItemCat.add(DataItem(R.string.second_dishes,R.drawable.seconds_dishes))
@@ -100,6 +101,6 @@ class MainMenuActivity : AppCompatActivity() {
         dataItemNat.add(DataItem(R.string.kavkaz_kitchen,R.drawable.kavkaz))
         dataItemNat.add(DataItem(R.string.vostok_kitchen,R.drawable.vostok))
         dataItemNat.add(DataItem(R.string.mexico_kitchen,R.drawable.mexico))
-    }
+    }*/
 
 }

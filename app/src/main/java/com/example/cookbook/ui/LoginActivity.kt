@@ -1,12 +1,10 @@
-package com.example.cookbook
-
+package com.example.cookbook.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.cookbook.databinding.ActivityLoginBinding
 import com.example.cookbook.domain.LoginUserEmail
-
 
 class LoginActivity: AppCompatActivity() {
 
@@ -27,7 +25,7 @@ class LoginActivity: AppCompatActivity() {
         bindingLogin.loginBtn.setOnClickListener {
             val email = bindingLogin.inputLogin.text.toString()
             val password = bindingLogin.inputPassword.text.toString()
-            loginUserEmail.loginUser(email,password, this@LoginActivity)
+            loginUserEmail.loginUser(email,password,this@LoginActivity)
         }
     }
 }
