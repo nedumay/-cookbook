@@ -17,7 +17,7 @@ class LoginActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(bindingLogin.root)
 
-        val loginIntent = Intent(this@LoginActivity, MainMenuActivity::class.java)
+        val loginIntent = Intent(this@LoginActivity, MainActivityMenu::class.java)
         bindingLogin.guestBtn.setOnClickListener{
             startActivity(loginIntent)
         }

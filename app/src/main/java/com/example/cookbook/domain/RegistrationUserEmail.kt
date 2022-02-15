@@ -3,8 +3,8 @@ package com.example.cookbook.domain
 import android.app.ProgressDialog
 import android.content.Intent
 import android.widget.Toast
-import com.example.cookbook.ui.MainMenuActivity
 import com.example.cookbook.R
+import com.example.cookbook.ui.MainActivityMenu
 import com.example.cookbook.ui.RegistrationActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.*
@@ -18,7 +18,8 @@ class RegistrationUserEmail {
 
     internal fun registrUser(email:String, password:String, registrationActivity: RegistrationActivity){
         progDialog = ProgressDialog(registrationActivity)
-        progDialog.setTitle(R.string.check)
+        progDialog.setTitle(R.string.loading)
+        progDialog.setMessage(registrationActivity.resources.getString(R.string.check))
 
         if(email.isNotEmpty() && password.isNotEmpty()){
             CoroutineScope(Dispatchers.IO).launch{
@@ -41,7 +42,7 @@ class RegistrationUserEmail {
     }
 
     private fun checkLoggedInState(registrationActivity: RegistrationActivity) {
-        val regIntent = Intent(registrationActivity, MainMenuActivity::class.java)
+        val regIntent = Intent(registrationActivity, MainActivityMenu::class.java)
         if (auth.currentUser == null) {
             Toast.makeText(registrationActivity, R.string.no_logged, Toast.LENGTH_LONG).show()
         } else {

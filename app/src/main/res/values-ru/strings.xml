@@ -27,6 +27,7 @@
     <string name="forgot_password">Забыли пароль?</string>
     <string name="loading">Загрузка</string>
     <string name="check">Проверка существования аккаунта</string>
+    <string name="logout">Выйти</string>
 
     <!-- Recipes by Category -->
     <string name="сold_appetizern">Холодная закуска</string>
