@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cookbook">
         <activity
+            android:name=".ui.MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Cookbook.NoActionBar" />
+        <activity
             android:name=".ui.MainActivityMenu"
             android:exported="false" />
         <activity
@@ -21,9 +26,6 @@
             android:theme="@style/Theme.Cookbook.NoActionBar" />
         <activity
             android:name=".ui.ListRecipes"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MainMenuActivity"
             android:exported="false" />
         <activity
             android:name=".ui.RegistrationActivity"

@@ -9,41 +9,34 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/home"
+            android:id="@+id/mainFragment"
             android:icon="@drawable/ic_baseline_home"
             android:title="@string/main"
-            android:fitsSystemWindows="true"
-            />
+            android:checked="true"/>
 
         <item
-            android:id="@+id/my_recipes"
+            android:id="@+id/myRecipesFragment"
             android:icon="@drawable/ic_baseline_star"
-            android:title="@string/my_recipes"
-            android:fitsSystemWindows="true"
-            />
+            android:title="@string/my_recipes"/>
 
         <item
-            android:id="@+id/favorite"
+            android:id="@+id/favoriteFragment"
             android:icon="@drawable/ic_baseline_favorite"
-            android:title="@string/favorite"
-            android:fitsSystemWindows="true"/>
+            android:title="@string/favorite"/>
 
         <item
-            android:id="@+id/settings_account"
+            android:id="@+id/settingsFragment"
             android:icon="@drawable/ic_baseline_settings"
-            android:title="@string/settings_account"
-            android:fitsSystemWindows="true"/>
+            android:title="@string/settings_account"/>
 
         <item
-            android:id="@+id/help_feedback"
+            android:id="@+id/helpFragment"
             android:icon="@drawable/ic_baseline_help"
-            android:title="@string/help_feedback"
-            android:fitsSystemWindows="true"/>
+            android:title="@string/help_feedback"/>
         <item
-            android:id="@+id/logout"
+            android:id="@+id/loginActivity"
             android:icon="@drawable/ic_baseline_exit"
-            android:title="@string/logout"
-            android:fitsSystemWindows="true"/>
+            android:title="@string/logout"/>
     </group>
 
 </menu>

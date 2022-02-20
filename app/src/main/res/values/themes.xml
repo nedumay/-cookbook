@@ -46,10 +46,13 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
     </style>
+
     <style name="Theme.Cookbook.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="Theme.Cookbook.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.Cookbook.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

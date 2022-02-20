@@ -12,11 +12,16 @@ import com.example.cookbook.adapters.RecyclerAdapter
 import com.example.cookbook.adapters.onRecyclerClickListener
 import com.example.cookbook.data.DataInitItem
 import com.example.cookbook.data.DataItem
+import com.example.cookbook.databinding.FragmentMainBinding
 import com.example.cookbook.ui.ListRecipes
 
 class MainFragment : Fragment() {
 
     private val dataItem = DataInitItem()
+
+    private var _binding: FragmentMainBinding? = null
+    private val binding get() = _binding!!
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,10 +31,38 @@ class MainFragment : Fragment() {
     }
 
     override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        _binding = FragmentMainBinding.inflate(inflater, container, false)
+        val root:View = binding.root
+
+        val recClickListenerCat = object: onRecyclerClickListener {
+            override fun onClick(dataItem: DataItem, position: Int) {
+                when(position){
+                    0 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        startActivity(intent)
+                    }
+                }
+            }
+        }
+        val adapterCat = RecyclerAdapter(context, dataItem.dataItemCat, recClickListenerCat)
+        binding.recyclerView.adapter = adapterCat
+
+        val recClickListenerNat = object: onRecyclerClickListener {
+            override fun onClick(dataItem: DataItem, position: Int) {
+                when(position){
+                    0 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        startActivity(intent)
+                    }
+                }
+            }
+        }
+        val adapterNat = RecyclerAdapter(context, dataItem.dataItemNat, recClickListenerNat)
+        binding.recyclerView2.adapter = adapterNat
+        return root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerViewCat: RecyclerView = view.findViewById(R.id.recyclerView)
@@ -37,8 +70,8 @@ class MainFragment : Fragment() {
             override fun onClick(dataItem: DataItem, position: Int) {
                 when(position){
                     0 -> {
-                        //val intent = Intent(this@MainFragment, ListRecipes::class.java)
-                       // startActivity(intent)
+                        val intent = Intent(context, ListRecipes::class.java)
+                        startActivity(intent)
                     }
                 }
             }
@@ -50,8 +83,9 @@ class MainFragment : Fragment() {
         val recClickListenerNat = object: onRecyclerClickListener {
             override fun onClick(dataItem: DataItem, position: Int) {
                 when(position){
-                    0 -> { //val intent = Intent(this@MainMenuActivity, ListRecipes::class.java)
-                        //startActivity(intent)
+                    0 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        startActivity(intent)
                     }
                 }
             }
@@ -59,5 +93,10 @@ class MainFragment : Fragment() {
         val adapterNat = RecyclerAdapter(context, dataItem.dataItemNat, recClickListenerNat)
         recyclerViewNat.adapter = adapterNat
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }*/
 
 }
