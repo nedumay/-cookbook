@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -17,6 +18,7 @@ import com.example.cookbook.R
 import com.example.cookbook.databinding.ActivityMenuMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
 
 
 class MainActivityMenu : AppCompatActivity() {
@@ -39,11 +41,24 @@ class MainActivityMenu : AppCompatActivity() {
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(
-            setOf( R.id.mainFragment, R.id.favoriteFragment, R.id.myRecipesFragment,  R.id.settingsFragment, R.id.helpFragment, R.id.loginActivity), drawerLayout
+            setOf( R.id.mainFragment, R.id.favoriteFragment, R.id.myRecipesFragment,  R.id.settingsFragment, R.id.helpFragment), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+        binding.appBarMain.topAppBar.setOnMenuItemClickListener { menuItem ->
+            when(menuItem.itemId){
+                R.id.more ->{
+                    Toast.makeText(applicationContext, "Test",Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.loginOut -> {
+                    Toast.makeText(applicationContext, "Test",Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -56,6 +71,13 @@ class MainActivityMenu : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 
+    }
+
+    fun logout(){
+        FirebaseAuth.getInstance().signOut()
+        val intent = Intent(this@MainActivityMenu, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
 }

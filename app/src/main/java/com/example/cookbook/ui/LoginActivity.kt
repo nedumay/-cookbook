@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.cookbook.databinding.ActivityLoginBinding
 import com.example.cookbook.domain.LoginUserEmail
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class LoginActivity: AppCompatActivity() {
 
@@ -23,6 +25,12 @@ class LoginActivity: AppCompatActivity() {
         }
 
         bindingLogin.loginBtn.setOnClickListener {
+            val chekBox = bindingLogin.chekLogin
+            if (chekBox.isChecked == true){
+
+            } else {
+
+            }
             val email = bindingLogin.inputLogin.text.toString()
             val password = bindingLogin.inputPassword.text.toString()
             loginUserEmail.loginUser(email,password,this@LoginActivity)

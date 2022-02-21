@@ -33,10 +33,7 @@
             android:id="@+id/helpFragment"
             android:icon="@drawable/ic_baseline_help"
             android:title="@string/help_feedback"/>
-        <item
-            android:id="@+id/loginActivity"
-            android:icon="@drawable/ic_baseline_exit"
-            android:title="@string/logout"/>
+
     </group>
 
 </menu>

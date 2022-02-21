@@ -6,6 +6,10 @@
     <item
         android:id="@+id/more"
         android:title="@string/about_the_app"
-        app:showAsAction="never" />
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/loginOut"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
 
 </menu>
