@@ -3,11 +3,8 @@ package com.example.cookbook.ui
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -53,7 +50,8 @@ class MainActivityMenu : AppCompatActivity() {
                     true
                 }
                 R.id.loginOut -> {
-                    Toast.makeText(applicationContext, "Test",Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(applicationContext, "Test",Toast.LENGTH_SHORT).show()
+                    logout()
                     true
                 }
                 else -> false
