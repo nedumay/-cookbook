@@ -7,6 +7,7 @@ class DataInitItem {
 
     internal val dataItemCat: ArrayList<DataItem> = ArrayList()
     internal val dataItemNat: ArrayList<DataItem> = ArrayList()
+    internal val dataItemRec: ArrayList<DataItemRec> = ArrayList()
 
     fun setInitialSavedStateCat() {
         dataItemCat.add(DataItem(R.string.сold_appetizern, R.drawable.ice_appetizer))
@@ -27,5 +28,12 @@ class DataInitItem {
         dataItemNat.add(DataItem(R.string.kavkaz_kitchen, R.drawable.kavkaz))
         dataItemNat.add(DataItem(R.string.vostok_kitchen, R.drawable.vostok))
         dataItemNat.add(DataItem(R.string.mexico_kitchen, R.drawable.mexico))
+    }
+
+    fun setInitialSavedStateRec(){
+        dataItemRec.add(DataItemRec( "Жареная картошка"))
+        dataItemRec.add(DataItemRec("Макароны"))
+        dataItemRec.add(DataItemRec( "Суп"))
+        dataItemRec.add(DataItemRec( "Борщ"))
     }
 }

@@ -6,8 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.example.cookbook.R
 import com.example.cookbook.adapters.RecyclerAdapter
 import com.example.cookbook.adapters.onRecyclerClickListener
 import com.example.cookbook.data.DataInitItem
@@ -39,6 +37,42 @@ class MainFragment : Fragment() {
                 when(position){
                     0 -> {
                         val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("one","1")
+                        startActivity(intent)
+                    }
+                    1 ->{
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("two","2")
+                        startActivity(intent)
+                    }
+                    2->{
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("three","3")
+                        startActivity(intent)
+                    }
+                    3->{
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("four","4")
+                        startActivity(intent)
+                    }
+                    4->{
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("five","5")
+                        startActivity(intent)
+                    }
+                    5->{
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("six","6")
+                        startActivity(intent)
+                    }
+                    6->{
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("seven","7")
+                        startActivity(intent)
+                    }
+                    7->{
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("eight","8")
                         startActivity(intent)
                     }
                 }
@@ -52,6 +86,32 @@ class MainFragment : Fragment() {
                 when(position){
                     0 -> {
                         val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("nine","9")
+                        startActivity(intent)
+                    }
+                    1 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("ten","10")
+                        startActivity(intent)
+                    }
+                    2 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("eleven","11")
+                        startActivity(intent)
+                    }
+                    3 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("twelve","12")
+                        startActivity(intent)
+                    }
+                    4 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("thirteen","13")
+                        startActivity(intent)
+                    }
+                    5 -> {
+                        val intent = Intent(context, ListRecipes::class.java)
+                        intent.putExtra("fourteen","14")
                         startActivity(intent)
                     }
                 }
@@ -61,42 +121,5 @@ class MainFragment : Fragment() {
         binding.recyclerView2.adapter = adapterNat
         return root
     }
-
-    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val recyclerViewCat: RecyclerView = view.findViewById(R.id.recyclerView)
-        val recClickListenerCat = object: onRecyclerClickListener {
-            override fun onClick(dataItem: DataItem, position: Int) {
-                when(position){
-                    0 -> {
-                        val intent = Intent(context, ListRecipes::class.java)
-                        startActivity(intent)
-                    }
-                }
-            }
-        }
-        val adapterCat = RecyclerAdapter(context, dataItem.dataItemCat, recClickListenerCat)
-        recyclerViewCat.adapter = adapterCat
-
-        val recyclerViewNat: RecyclerView = view.findViewById(R.id.recyclerView2)
-        val recClickListenerNat = object: onRecyclerClickListener {
-            override fun onClick(dataItem: DataItem, position: Int) {
-                when(position){
-                    0 -> {
-                        val intent = Intent(context, ListRecipes::class.java)
-                        startActivity(intent)
-                    }
-                }
-            }
-        }
-        val adapterNat = RecyclerAdapter(context, dataItem.dataItemNat, recClickListenerNat)
-        recyclerViewNat.adapter = adapterNat
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }*/
 
 }
