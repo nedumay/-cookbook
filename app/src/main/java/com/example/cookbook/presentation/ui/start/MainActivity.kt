@@ -1,9 +1,11 @@
-package com.example.cookbook.ui
+package com.example.cookbook.presentation.ui.start
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.cookbook.databinding.ActivityMainBinding
+import com.example.cookbook.presentation.ui.login.LoginActivity
+import com.example.cookbook.presentation.ui.registration.RegistrationActivity
 
 class MainActivity : AppCompatActivity() {
 

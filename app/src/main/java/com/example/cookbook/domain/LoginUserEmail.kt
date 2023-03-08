@@ -4,8 +4,8 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.widget.Toast
 import com.example.cookbook.R
-import com.example.cookbook.ui.LoginActivity
-import com.example.cookbook.ui.MainActivityMenu
+import com.example.cookbook.presentation.ui.login.LoginActivity
+import com.example.cookbook.presentation.ui.MainActivityMenu
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.*
 

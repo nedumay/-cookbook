@@ -1,4 +1,4 @@
-package com.example.cookbook.adapters
+package com.example.cookbook.presentation.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cookbook.R
 import com.example.cookbook.data.DataItem
 
-class RecyclerAdapter internal constructor(context: Context?, dataItem: List<DataItem>, private val onClickListener:onRecyclerClickListener):
+class RecyclerAdapter internal constructor(context: Context?, dataItem: List<DataItem>, private val onClickListener: onRecyclerClickListener):
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
 
         private val inflater: LayoutInflater

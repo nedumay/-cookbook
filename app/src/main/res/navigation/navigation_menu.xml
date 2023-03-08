@@ -8,27 +8,27 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.cookbook.ui.main.MainFragment"
+        android:name="com.example.cookbook.presentation.ui.main.MainFragment"
         android:label="@string/main"
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="com.example.cookbook.ui.favorite.FavoriteFragment"
+        android:name="com.example.cookbook.presentation.ui.favorite.FavoriteFragment"
         android:label="@string/favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/myRecipesFragment"
-        android:name="com.example.cookbook.ui.myrecipes.MyRecipesFragment"
+        android:name="com.example.cookbook.presentation.ui.myrecipes.MyRecipesFragment"
         android:label="@string/my_recipes"
         tools:layout="@layout/fragment_my_recipes" />
     <fragment
         android:id="@+id/helpFragment"
-        android:name="com.example.cookbook.ui.help.HelpFragment"
+        android:name="com.example.cookbook.presentation.ui.help.HelpFragment"
         android:label="@string/help_feedback"
         tools:layout="@layout/fragment_help" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.cookbook.ui.settings.SettingsFragment"
+        android:name="com.example.cookbook.presentation.ui.settings.SettingsFragment"
         android:label="@string/settings_account"
         tools:layout="@layout/fragment_settings" />
 </navigation>

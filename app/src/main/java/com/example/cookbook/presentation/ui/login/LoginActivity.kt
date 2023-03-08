@@ -1,4 +1,4 @@
-package com.example.cookbook.ui
+package com.example.cookbook.presentation.ui.login
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -7,6 +7,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cookbook.databinding.ActivityLoginBinding
 import com.example.cookbook.domain.LoginUserEmail
+import com.example.cookbook.presentation.ui.MainActivityMenu
 
 class LoginActivity: AppCompatActivity() {
 

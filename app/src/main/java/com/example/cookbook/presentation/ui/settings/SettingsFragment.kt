@@ -1,4 +1,4 @@
-package com.example.cookbook.ui.help
+package com.example.cookbook.presentation.ui.settings
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.cookbook.R
-import com.example.cookbook.databinding.FragmentFavoriteBinding
-import com.example.cookbook.databinding.FragmentHelpBinding
+import com.example.cookbook.databinding.FragmentMyRecipesBinding
+import com.example.cookbook.databinding.FragmentSettingsBinding
 
-class HelpFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
-    private var _binding: FragmentHelpBinding? = null
+    private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +20,11 @@ class HelpFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        _binding = FragmentHelpBinding.inflate(inflater, container,false)
+        // Inflate the layout for this fragment
+        _binding = FragmentSettingsBinding.inflate(inflater, container,false)
         val root:View = binding.root
         return root
-        //return inflater.inflate(R.layout.fragment_help, container, false)
+        //return inflater.inflate(R.layout.fragment_settings, container, false)
     }
 
     override fun onDestroyView() {

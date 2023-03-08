@@ -1,4 +1,4 @@
-package com.example.cookbook.ui
+package com.example.cookbook.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.text.style.ForegroundColorSpan
 import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
 import com.example.cookbook.R
-import com.example.cookbook.adapters.RecyclerAdapterRec
-import com.example.cookbook.adapters.onRecyclerClickListenerRecipes
+import com.example.cookbook.presentation.adapters.RecyclerAdapterRec
+import com.example.cookbook.presentation.adapters.onRecyclerClickListenerRecipes
 import com.example.cookbook.data.DataInitItem
 import com.example.cookbook.data.DataItemRec
 import com.example.cookbook.databinding.ActivityListRecipesBinding
@@ -54,7 +54,7 @@ class ListRecipes : AppCompatActivity() {
 
     }
 
-    private fun updateSearch(adapterCat:RecyclerAdapterRec){
+    private fun updateSearch(adapterCat: RecyclerAdapterRec){
         val s = bindingListRecipes.research.text
         if (s?.length ==0){
             adapterCat.dataItemRec = dataItemRec.dataItemRec
@@ -66,7 +66,7 @@ class ListRecipes : AppCompatActivity() {
         adapterCat.notifyDataSetChanged()
     }
 
-    private fun highlight(adapterCat:RecyclerAdapterRec){
+    private fun highlight(adapterCat: RecyclerAdapterRec){
         val s = bindingListRecipes.research.text
         adapterCat.dataItemRec.forEach { item ->
             item.recipes.getSpans(0,item.recipes.length, ForegroundColorSpan::class.java).forEach {

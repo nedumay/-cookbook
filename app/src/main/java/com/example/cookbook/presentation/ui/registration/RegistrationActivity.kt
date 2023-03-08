@@ -1,4 +1,4 @@
-package com.example.cookbook.ui
+package com.example.cookbook.presentation.ui.registration
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -12,29 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cookbook">
         <activity
-            android:name=".ui.MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.Cookbook.NoActionBar" />
-        <activity
-            android:name=".ui.MainActivityMenu"
+            android:name=".presentation.ui.MainActivityMenu"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
-            android:exported="false"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.Cookbook.NoActionBar" />
-        <activity
-            android:name=".ui.ListRecipes"
+            android:name=".presentation.ui.ListRecipes"
             android:exported="false" />
         <activity
-            android:name=".ui.RegistrationActivity"
+            android:name=".presentation.ui.registration.RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".presentation.ui.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".presentation.ui.start.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,10 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

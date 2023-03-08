@@ -14,30 +14,26 @@
         <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">true</item>
     </style>
-
-    <style name="TextApp">
-        <item name="android:textSize">40sp</item>
-        <item name="android:fontFamily">@font/roboto</item>
+    <!-- Style textView: App name-->
+    <style name="text_view_title">
+        <item name="android:textSize">72sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="TitleDarkTheme">
         <item name="android:textSize">30sp</item>
-        <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="TextBtnDarkTheme">
-        <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="TitleTextMenu">
         <item name="android:textSize">20sp</item>
-        <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
     </style>

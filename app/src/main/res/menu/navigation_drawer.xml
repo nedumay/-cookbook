@@ -15,11 +15,6 @@
             android:checked="true"/>
 
         <item
-            android:id="@+id/myRecipesFragment"
-            android:icon="@drawable/ic_baseline_star"
-            android:title="@string/my_recipes"/>
-
-        <item
             android:id="@+id/favoriteFragment"
             android:icon="@drawable/ic_baseline_favorite"
             android:title="@string/favorite"/>

@@ -1,4 +1,4 @@
-package com.example.cookbook.ui.main
+package com.example.cookbook.presentation.ui.main
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,12 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.cookbook.adapters.RecyclerAdapter
-import com.example.cookbook.adapters.onRecyclerClickListener
+import com.example.cookbook.presentation.adapters.RecyclerAdapter
+import com.example.cookbook.presentation.adapters.onRecyclerClickListener
 import com.example.cookbook.data.DataInitItem
 import com.example.cookbook.data.DataItem
 import com.example.cookbook.databinding.FragmentMainBinding
-import com.example.cookbook.ui.ListRecipes
+import com.example.cookbook.presentation.ui.ListRecipes
 
 class MainFragment : Fragment() {
 

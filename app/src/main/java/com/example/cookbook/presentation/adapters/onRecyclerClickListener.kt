@@ -1,4 +1,4 @@
-package com.example.cookbook.adapters
+package com.example.cookbook.presentation.adapters
 
 import com.example.cookbook.data.DataItem
 
